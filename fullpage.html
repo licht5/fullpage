@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fullpage</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <link href="jquery.fullPage.css" rel="stylesheet" type="text/css">
+    <link HREF="mycss.css" rel="stylesheet" type="text/css">
+    <script src="jquery-1.7.1.min.js"></script>
+    <script src="jquery.fullPage.js"></script>
+
+
+</head>
+<body>
+<script src="move.js"></script>
+<div id="fullpage">
+    <div id="header" class="header">
+        <div class="info">
+            <h1 style="color: white">田斐菡</h1>
+        </div>
+        <div class="meiti">
+            <audio controls="controls" autoplay="autoplay">
+                <source src="buyaoshuohua.mp3" type="audio/mpeg">
+                您的浏览器不支持 audio 元素。
+            </audio>
+        </div>
+
+
+        <div class="nav">
+            <ul>
+                <li><a href="./fullpage.html#page1">首页</a></li>
+                <li><a href="./fullpage.html#page2">canvas倒计时</a></li>
+                <li><a href="./fullpage.html#page3">Norway组数据统计</a></li>
+                <li><a href="./fullpage.html#page4">技术体系</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="section section1" >
+        <div class="myself">
+
+
+        </div>
+        <h3>姓名:田斐菡<br>
+        学校:华中科技大学<br>
+        专业:软件学院软件工程<br>
+        QQ:1961807207<br>
+        TEL:15527013641
+    </h3>
+        <img class="hello" src="./picture/tfh.png">
+
+    </div>
+    <div class="section section2" >
+
+            <div class="canvas1">
+                <h1>canvas倒计时</h1>
+                <p>主要运用了球形的绘制,模拟平抛运动,模拟重力,碰撞检测,模拟摩擦力,canvas绘图,删除方法改变数组长度等技术</p>
+            </div>
+            <img class="img1" src="./picture/canvas.png">
+        <button><a href="http://licht.applinzi.com/">点击查看效果</a> </button>
+        <img class="penimg"   src="./picture/pen.png">
+
+    </div>
+    <div class="section section3" >
+        <div class="canvas2">
+            <h2>norway组数据统计</h2>
+            <p>使用Bootstrap框架以及echart插件进行快速开发</p>
+        </div>
+        <button class="click"><a href="http://licht5.applinzi.com/">点击查看效果</a> </button>
+        <div class="kapian1">
+            <img class="kapian11" src="./picture/QW.png">
+            <p >登录页</p>
+        </div>
+
+        <div class="kapian2">
+            <img class="kapian22" src="./picture/we.png">
+            <p >feedback</p>
+
+        </div>
+        <div class="kapian3">
+            <img class="kapian33" src="./picture/er.png">
+            <p >approve</p>
+
+        </div>
+    </div>
+    <div class="section section4">
+        <h1>期待通过今后的学习,将白块变成橘块</h1>
+        <div class="myself1">
+            <div class="have"><p>HTML</p></div>
+            <div class="have"><p>CSS3</p></div>
+            <div class="have1"><p>JSON</p></div>
+            <div class="have2"><p>NODE.JS</p></div>
+            <div class="have"><p>JS</p></div>
+            <div class="have3"><p>PHOTOSHOP</p></div>
+            <div class="have1"><p>REACT</p></div>
+            <div class="have4"><p>PHP</p></div>
+            <div class="have4"><p>实习</p></div>
+            <div class="have5"><p>您给予的宝贵的offer</p></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $('#fullpage').fullpage(
+                {
+                    paddingTop:"80px",
+                    fixedElements:"#header",
+                    anchors: ["page1","page2","page3","page4"],
+                   navigation:true,
+                    navigationPosition:"left",
+                    slidesNavigation:true,
+                    afterLoad: function(link,index){
+                        switch(index) {
+                            case 1:
+                                    move(".section1 img").rotate(360).end();
+                                move(".section1 h3").scale(1.5).end();
+//                                move(".section1 p").set("top","20%").end();
+
+                                break;
+                            case 2:
+                                //move(".section2 h1").scale(0.7).end();
+                                move(".section2 h1").scale(1.5).end();
+                                move(".section2 img").set("left","50%").end();
+                                move(".penimg").set("bottom","30%").end();
+                                move(".penimg").set("left","40%").end();
+
+                                break;
+                            case 3:
+                                move(".section3 h2").scale(1.5).end();
+//
+                                move(".section3 img.kapian11").rotate(360).end(function(){
+                                    move(".section3 img.kapian22").rotate(360).end(function(){
+                                        move(".section3 img.kapian33").rotate(360).end(function(){
+                                            move(".kapian1 p").scale(1.3).end(function(){
+                                                move(".kapian2 p").scale(1.3).end(function(){
+                                                    move(".kapian3 p").scale(1.3).end();
+                                                });
+                                            });
+                                        })
+                                    });
+                                });
+                                break;
+                            case 4:
+                                move(".section4 h1").set("top","20%").end();
+                                break
+                            default:
+                                break;
+                        }
+
+
+                    },
+                    onLeave: function(link,index){
+                        switch(index) {
+                            case 1:
+                                move(".section1 img").rotate(-360).end();
+                                move(".section1 h3").scale(1).end();
+//                                move(".section1 p").set("top","800px").end();
+                                break;
+                            case 2:
+                                move(".section2 h1").scale(1).end();
+                                move(".section2 img").set("left","40%").end();
+                                move(".penimg").set("bottom","10%").end();
+                                move(".penimg").set("left","30%").end();
+                                break;
+                            case 3:
+                                move(".section3 h2").scale(1).end();
+//                                move(".section3 p").set("bottom","10px").end();
+                                move(".section3 img.kapian11").rotate(-360).end();
+                                move(".section3 img.kapian22").rotate(-360).end();
+                                move(".section3 img.kapian33").rotate(-360).end();
+                                move(".kapian1 p").scale(1).end();
+                                move(".kapian3 p").scale(1).end();
+                                move(".kapian2 p").scale(1).end();
+                                break;
+                            case  4:
+                                move(".section4 h1").set("top","-20%").end();
+                                break;
+                            default:
+                                break;
+                        }
+
+
+                    },
+
+
+                }
+        );
+    });
+
+</script>
+
+</body>
+</html>

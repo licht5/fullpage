@@ -1,0 +1,428 @@
+.section1{
+   background-image: url("./picture/section1.jpg");
+    background-size: cover;
+
+}
+.section1 p{
+    position: absolute;
+    top: 800px;
+    left:30%;
+    color: black;
+    font-size: larger;
+}
+
+ h3{
+     color: white;
+    position: relative;
+    top:10px;
+    left: 70%;
+    padding: 10px;
+     line-height: 30px;
+}
+.section2{
+    background-image: url("./picture/section1.jpg");
+    background-size: cover;
+}
+.section3{
+    background-image: url("./picture/section1.jpg");
+    background-size: cover;
+}
+.section4{
+    background-image: url("./picture/section1.jpg");
+    background-size: cover;
+}
+.section3 h1{
+    position: absolute;
+    top:30px;
+    left: -20%;
+}
+.section3 p{
+    position: absolute;
+    top:60px;
+    right: -20%;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    /*background-color;*/
+    background-color: royalblue;
+}
+.info{
+    position: fixed;
+    left: 20px;
+    width: 300px;
+    height: 80px;
+    text-align: center;
+}
+.info h1{
+    position: absolute;
+    text-align: center;
+    top: 0;
+}
+
+.nav{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 80px;
+    /*background-color: white;*/
+}
+ul {
+    position: absolute;
+    margin: auto;
+    top:30px;
+    bottom: 0;
+    right: 0;
+    white-space: nowrap; /* 避免文字换行 */
+
+}
+ul li{
+    position: relative;
+    display: inline;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 21px 25px;
+    display: inline;
+    font-size: 18px;
+}
+.hello{
+    position: absolute;
+    left: 45%;
+    top:16%;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    border: 2px solid black;
+
+}
+.img1{
+    position: absolute;
+    left: 45%;
+    top:16%;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    border: 2px solid black;
+
+}
+.myself{
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    left: 30%;
+    bottom: 10%;
+    background-color: royalblue;
+    opacity: 0.4;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+
+.canvas1{
+    position: absolute;
+    top: 20%;
+left: 20%;
+    width: 300px;
+    height: 100px;
+
+
+}
+.canvas2{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 300px;
+    height: 100px;
+
+
+}
+.canvas1 h1{
+    font-size: x-large;
+    color: white;
+
+}
+.canvas2 h2{
+    font-size: x-large;
+    color: white;
+
+}
+.canvas2 p{
+    position: relative;
+    left: -25%;
+    line-height: 40px;
+    font-size: 30px;
+    text-indent: 50px;
+    color: white;
+}
+.canvas1 p{
+    position: relative;
+    left: -25%;
+    line-height: 40px;
+    font-size: 30px;
+    text-indent: 50px;
+    color: white;
+}
+.img1{
+    position: absolute;
+    top:20%;
+    left: 40%;
+    width: 500px;
+    height: 300px;
+    border: 2px solid cadetblue;
+    border-radius: 20px;
+}
+button{
+    position: absolute;
+    bottom: 10%;
+    right: 20%;
+    width: 200px;
+    height: 80px;
+    background-color: darkgreen;
+    border-radius: 15px 50px;
+
+}
+button:hover{
+    background-color: lightseagreen;
+    transform:scale(1.5,1.5);
+}
+
+button a{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+
+}
+.click{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    width: 200px;
+    height: 80px;
+    background-color: darkgreen;
+    border-radius: 50px 15px;
+
+}
+
+
+.penimg{position: absolute;
+    bottom: 10%;
+    left: 30%;
+    width: 100px;
+    height: 100px;
+}
+
+.kapian1{
+    position: absolute;
+    top:20%;
+    right: 540px;
+    width: 240px;
+    height: 400px;
+
+
+}
+.kapian1 p{
+    position: absolute;
+    top: 300px;
+    left: 30%;
+    font-size: 30px;
+    color: white;
+}
+.kapian11{
+    position: relative;
+    top:0;
+    width: 240px;
+    height: 300px;
+    border: 3px  solid  lightskyblue;
+    border-radius: 30px;
+}
+
+
+
+.kapian2{
+    position: absolute;
+    top:20%;
+    right: 280px;
+    width: 240px;
+    height: 400px;
+
+}
+.kapian2 p{
+    position: absolute;
+    top: 300px;
+    left: 30%;
+    font-size: 30px;
+    color: white;
+}
+
+.kapian22{
+     position: relative;
+     top:0;
+     width: 240px;
+     height: 300px;
+     border: 3px  solid  lightskyblue;
+     border-radius: 30px;
+ }
+
+
+
+.kapian3{
+    position: absolute;
+    top:20%;
+    right: 20px;
+    width: 240px;
+    height: 300px;
+
+}
+.kapian3 p{
+    position: absolute;
+    top: 300px;
+    left: 30%;
+    font-size: 30px;
+    color: white;
+}
+
+.kapian33{
+    position: relative;
+    top:0;
+    width: 240px;
+    height: 300px;
+    border: 3px  solid  lightskyblue;
+    border-radius: 30px;
+}
+
+.myself1{
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    left: 30%;
+    bottom: 10%;
+
+
+    border-radius: 30px;
+    border: 2px solid black;
+}
+.section4 p{
+   position: absolute;
+    left: 10px;
+    display: inline-block;
+    top:-25px;
+    font-family: arial;
+    font-size: 30px;
+}
+.have{
+    margin: 20px;
+    position: relative;
+    top:20px;
+    left: 20px;
+    background-color: burlywood;
+    border: 3px solid green;
+    width: 100px;
+    height: 40px;
+    display: inline-block;
+    animation:myfirst 5s;
+    -webkit-animation:myfirst 5s; /* Safari and Chrome */
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+}
+@keyframes myfirst
+{
+    0%{opacity: 0;}
+    100%{opacity: 1}
+
+}
+.have4{
+    margin: 20px;
+    position: relative;
+    top:20px;
+    left: 20px;
+    background-color: white;
+    border: 3px solid green;
+    width: 100px;
+    height: 40px;
+    display: inline-block;
+    animation:myfirst1 3s;
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation:myfirst1 3s; /* Safari and Chrome */
+}
+@keyframes myfirst1
+{
+    0%{opacity: 0;}
+    100%{opacity: 1}
+}
+.have1{
+    margin: 20px;
+    position: relative;
+    top:20px;
+    left: 20px;
+    background-color: white;
+    border: 3px solid green;
+    width: 150px;
+    height: 40px;
+    display: inline-block;
+    animation:myfirst2 7s;
+    -webkit-animation:myfirst2 7s; /* Safari and Chrome */
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+}
+@keyframes myfirst2
+{
+    0%{opacity: 0;}
+    100%{opacity: 1}
+
+}
+.have2{
+    margin: 20px;
+    position: relative;
+    top:20px;
+    left: 20px;
+    background-color: white;
+    border: 3px solid green;
+    width: 200px;
+    height: 40px;
+    display: inline-block;
+}
+.have3{
+    margin: 20px;
+    position: relative;
+    top:20px;
+    left: 20px;
+    background-color: burlywood;
+    border: 3px solid green;
+    width: 200px;
+    height: 40px;
+    display: inline-block;
+}
+.have5{
+    margin: 20px;
+    position: relative;
+    top:20px;
+    left: 20px;
+    background-color: white;
+    border: 3px solid green;
+    width: 300px;
+    height: 40px;
+    display: inline-block;
+}
+.section4 h1{
+    position: absolute;
+    top:-20%;
+    left: 33%;
+    color: white;
+}
+.meiti{
+    position: fixed;
+    left: 150px;
+    width: 300px;
+    height: 40px;
+    top:30px;
+    /*background-color: darkcyan;*/
+}
+audio{
+    background-color: darkcyan;
+}
